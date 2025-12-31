@@ -147,3 +147,49 @@ canvas {
   background: rgba(255,255,255,0.4);
   transform: translateX(-50%);
 }
+
+/* =====================
+   MAGICAL CREATURES
+===================== */
+.creature {
+  position: fixed;
+  width: 90px;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 2;
+  filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
+  transition: transform 0.3s ease;
+}
+
+/* Rabbit – bottom left */
+.rabbit {
+  bottom: 30px;
+  left: 30px;
+  animation: rabbitFloat 4s ease-in-out infinite;
+}
+
+/* Unicorn – floating across sky */
+.unicorn {
+  top: 20%;
+  left: -120px;
+  width: 140px;
+  opacity: 0.85;
+  animation: unicornFly 40s linear infinite;
+}
+
+@keyframes rabbitFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes unicornFly {
+  0% {
+    transform: translateX(-150px) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-40px);
+  }
+  100% {
+    transform: translateX(110vw) translateY(0);
+  }
+}
