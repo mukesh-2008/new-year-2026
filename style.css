@@ -194,3 +194,22 @@ footer {
   50% { text-shadow: 0 0 30px gold; }
   100% { text-shadow: 0 0 10px gold; }
 }
+.shooting-stars::before {
+  content: "";
+  position: fixed;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  animation: shoot 3s infinite;
+}
+
+@keyframes shoot {
+  from {
+    transform: translate(-10vw, -10vh);
+    opacity: 1;
+  }
+  to {
+    transform: translate(110vw, 110vh);
+    opacity: 0;
+  }
+}
