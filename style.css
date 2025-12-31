@@ -171,16 +171,26 @@ footer {
   box-shadow: 0 0 25px rgba(255,215,0,0.7);
   transform: translateY(-3px) scale(1.05);
   }
-@keyframes fall {
-  to {
-    transform: translateY(110vh) rotate(360deg);
-    opacity: 0;
-  }
-}
+
 /* FIREWORKS CANVAS */
 #fireworks {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 999;
+}
+.glow {
+  animation: glowPulse 2s infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+    }
+
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 10px gold; }
+  50% { text-shadow: 0 0 30px gold; }
+  100% { text-shadow: 0 0 10px gold; }
 }
