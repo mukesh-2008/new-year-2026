@@ -94,7 +94,11 @@ function startFireworks() {
   }
 
   animate();
+const mini = setInterval(createFirework, 1200);
 
+setTimeout(() => {
+  clearInterval(mini);
+}, 15000); // stops after 15 seconds
   // Stop after 6 seconds
   setTimeout(() => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
