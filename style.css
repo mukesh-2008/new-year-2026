@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a1a3a, #020617);
+  color: #f8fafc;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* PARTICLES */
+.particles {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(#ffffff33 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: move 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move {
+  from { background-position: 0 0; }
+  to { background-position: 200px 200px; }
+}
+
+/* MUSIC */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* HERO */
+.hero {
+  padding: 120px 20px 80px;
+}
+
+.intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.year {
+  margin-top: 15px;
+  font-size: 46px;
+  color: gold;
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+
+/* COUNTDOWN */
+.countdown-section {
+  padding: 60px 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.countdown div {
+  background: rgba(255,255,255,0.1);
+  padding: 20px 25px;
+  border-radius: 16px;
+  min-width: 110px;
+  box-shadow: 0 0 25px rgba(255,215,0,0.2);
+}
+
+.countdown span {
+  font-size: 36px;
+  color: gold;
+}
+
+/* WISHES */
+.wishes {
+  padding: 80px 20px;
+}
+
+.wish {
+  font-size: 20px;
+  margin: 20px 0;
+  opacity: 0;
+  animation: fadeUp 1.5s forwards;
+}
+
+.wish:nth-child(1){animation-delay:0.5s}
+.wish:nth-child(2){animation-delay:1.5s}
+.wish:nth-child(3){animation-delay:2.5s}
+.wish:nth-child(4){animation-delay:3.5s}
+
+/* MESSAGE */
+.message {
+  padding: 80px 20px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  background: rgba(255,255,255,0.12);
+  padding: 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  animation: fadeUp 2s forwards;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color: gold;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
