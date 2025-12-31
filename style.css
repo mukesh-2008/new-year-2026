@@ -171,3 +171,10 @@ footer {
   box-shadow: 0 0 25px rgba(255,215,0,0.7);
   transform: translateY(-3px) scale(1.05);
   }
+/* FIREWORKS CANVAS */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
