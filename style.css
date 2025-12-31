@@ -139,3 +139,35 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* INSTAGRAM LINKS */
+.social {
+  margin-top: 30px;
+}
+
+.social-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.social a {
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: gold;
+  border: 1px solid rgba(255,215,0,0.4);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.social a:hover {
+  background: gold;
+  color: #020617;
+  box-shadow: 0 0 25px rgba(255,215,0,0.7);
+  transform: translateY(-3px) scale(1.05);
+  }
