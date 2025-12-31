@@ -1,82 +1,71 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Welcome 2026 ✨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- Background Particles -->
-  <div class="particles"></div>
-
-  <!-- Music Button -->
-  <div class="music-btn" id="musicBtn">🎵</div>
-  <audio id="bgMusic" src="music.mp3" loop></audio>
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1 class="intro-text">Every ending hides a beginning</h1>
-    <h2 class="year">Welcome 2026 ✨</h2>
-  </section>
-
-  <!-- COUNTDOWN -->
-  <section class="countdown-section">
-    <div class="countdown" id="countdown">
-      <div><span id="days">00</span><p>Days</p></div>
-      <div><span id="hours">00</span><p>Hours</p></div>
-      <div><span id="minutes">00</span><p>Minutes</p></div>
-      <div><span id="seconds">00</span><p>Seconds</p></div>
-    </div>
-  </section>
-
-  <!-- WISHES -->
-  <section class="wishes">
-    <p class="wish">“May the year respect your effort.”</p>
-    <p class="wish">“May peace become your default setting.”</p>
-    <p class="wish">“May you finally feel proud of yourself.”</p>
-    <p class="wish">“May growth come quietly and stay forever.”</p>
-  </section>
-
-  <!-- PERSONAL MESSAGE -->
-   <section class="message">
-  <div class="card">
-    <h3>From Mukesh</h3>
-    <p>
-      I hope this year treats you gently,  
-      rewards your patience,  
-      and gives you reasons to smile without forcing it.
-    </p>
-
-    <div class="social">
-      <p class="social-title">Connect with me</p>
-
-      <a href="https://instagram.com/drama_x_bluz" target="_blank">
-        @drama_x_bluz
-      </a>
-
-      <a href="https://instagram.com/drama_fan_offcial" target="_blank">
-        @drama_fan_offcial
-      </a>
-
-      <a href="https://instagram.com/its_me_anu._.04" target="_blank">
-        @its_me_anu._.04
-      </a>
-    </div>
-  </div>
-</section>
-
-  <!-- FOOTER -->
-  <footer>
-    Crafted with care • 2026 ✨
-  </footer>
-
-  <script src="script.js"></script>
+  <!-- 🌌 Magical Sky Layers -->
+  <canvas id="stars"></canvas>
   <canvas id="fireworks"></canvas>
+  <div id="balloons"></div>
+
+  <!-- 🐰🦄 Creatures -->
+  <img src="assets/rabbit.png" class="creature rabbit" alt="rabbit">
+  <img src="assets/unicorn.png" class="creature unicorn" alt="unicorn">
+
+  <!-- 🎬 SCROLL STORY -->
+  <section class="scene intro">
+    <h1>✨ A Dream Universe Awaits</h1>
+    <p>Time is moving… something magical is coming</p>
+  </section>
+
+  <section class="scene countdown">
+    <h2 id="timer">00 : 00 : 00 : 00</h2>
+    <p>Until we enter 2026</p>
+  </section>
+
+  <section class="scene message">
+    <div class="glass">
+      <h3>Hi, I’m Mukesh ✨</h3>
+      <p>
+        A new year isn’t just time changing.  
+        It’s hope learning how to glow again.
+      </p>
+    </div>
+  </section>
+
+  <section class="scene insta">
+    <h3>Let’s stay connected 💫</h3>
+    <div class="insta-cards">
+      <a href="https://instagram.com/drama_x_bluz" target="_blank">@drama_x_bluz</a>
+      <a href="https://instagram.com/drama_fan_offcial" target="_blank">@drama_fan_offcial</a>
+      <a href="https://instagram.com/its_me_anu._.04" target="_blank">@its_me_anu._.04</a>
+    </div>
+  </section>
+
+  <section class="scene share">
+    <button id="shareBtn">🚀 Share this magic</button>
+  </section>
+
+  <!-- 🎵 Music -->
+  <audio id="bgMusic" src="audio/newyear.mp3" preload="auto"></audio>
+
+  <!-- Scripts -->
+  <script src="js/stars.js"></script>
+  <script src="js/balloons.js"></script>
+  <script src="js/fireworks.js"></script>
+  <script src="js/creatures.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/share.js"></script>
+
 </body>
 </html>
