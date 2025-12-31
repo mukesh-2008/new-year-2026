@@ -1,1 +1,115 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* =====================
+   BODY & SKY
+===================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1b1f3b, #050814 70%);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* =====================
+   CANVAS LAYERS
+===================== */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#stars {
+  z-index: -3;
+}
+
+#fireworks {
+  z-index: -2;
+}
+
+/* =====================
+   SCENES (SCROLL STORY)
+===================== */
+.scene {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scene h1, .scene h2, .scene h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.scene p {
+  max-width: 700px;
+  opacity: 0.85;
+  margin-top: 15px;
+}
+
+/* =====================
+   GLASS CARD
+===================== */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,255,255,0.08);
+}
+
+/* =====================
+   INSTAGRAM CARDS
+===================== */
+.insta-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.insta-cards a {
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.insta-cards a:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 25px rgba(120,180,255,0.5);
+}
+
+/* =====================
+   SHARE BUTTON
+===================== */
+#shareBtn {
+  padding: 16px 30px;
+  font-size: 16px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6dd5fa, #c77dff);
+  color: #000;
+  font-weight: 600;
+}
